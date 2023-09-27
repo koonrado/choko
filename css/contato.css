@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans:wght@500&family=Orelega+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter' Arial;
+}
+
+:root{
+    --cor-laranja:#FA5738;
+    --cor-amarelho:#FFA355;
+    --cor-fundo:#FAF1CA;
+    --cor-branco:#ffffff;
+    --cor-preto:#000000;
+}
+
+body, .tudo{
+    font-family: 'Inter', sans-serif;
+    padding: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo);
+    overflow-x: hidden;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.seta{
+    display: flex;
+
+}
+
+.tudo{
+    display: block;
+    width: 30rem;
+    border: 2px solid var(--cor-preto);
+    background-color: #FFA355;
+}
+
+.form-img{
+    padding-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-amarelho);
+    flex-direction: column;
+}
+
+.form-img {
+    display: flex;
+    width: 25rem;
+}
+
+.form {
+    max-width: 32rem;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor-laranja);
+    padding: 3rem;
+    border: 2px solid var(--cor-preto);
+    box-shadow: 4px 4px 0 var(--cor-preto);
+    color: var(--cor-preto);
+}
+
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+form input, form textarea {
+    outline: unset;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid var(--cor-laranja);
+    border: 2px solid var(--cor-preto);
+    box-shadow: 4px 4px 0 var(--cor-preto);
+    color: var(--cor-preto);
+}
+
+form  input:focus, form textarea:focus {
+    background-color: var(--cor-fundo);
+}
+
+form input[type=submit] {
+    background-color:var(--cor-amarelho);
+    color:  var(--cor-preto);
+    cursor: pointer;
+}
+
+form label {
+    margin-left: 10px;
+
+}
+
+.Enviar{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.text-title {
+    background-color: var(--cor-amarelho);
+    border: 2px solid var(--cor-preto);
+    box-shadow: 4px 4px 0 var(--cor-preto);
+    color: var(--cor-preto);
+    font-family:'Inter', sans-serif;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 9px;
+    padding: 6px;
+}
+
+.input-group {
+        max-height: 35rem;
+    }
+
+.seta2{
+    display: none;
+}
+
+@media screen and (max-width: 1090px) {
+    body {
+        font-family: 'Inter', sans-serif;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-fundo);
+    }
+    
+    .form-img {
+        display: none;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .seta2{
+        display: flex;
+    }
+
+    .seta{
+        display: none;
+    }
+
+    .tudo{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 660px) {
+    body {
+        font-family: 'Inter', sans-serif;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-fundo);
+    }
+    
+    .form-img {
+        display: none;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .form {
+        display: flex;
+        height: 35rem;
+        width: 150%;
+        margin-right: 35px;
+    }
+
+    form input, form textarea {
+        outline: unset;
+        padding: 20px;
+        width: 190px;
+     }
+    .seta2{
+        display: flex;
+    }
+
+    .seta{
+        display: none;
+    }
+
+    .tudo{
+        display: none;
+    }
+}
+

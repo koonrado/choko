@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-laranja:#FA5738;
+    --cor-amarelho:#FFA355;
+    --cor-fundo:#FAF1CA;
+    --cor-branco:#ffffff;
+    --cor-preto:#000000;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    padding: 0 1rem;
+}
+
+.tx-h, .tx-m, .tx-td, h1{
+    border-color: var(--cor-preto);
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    padding: 1.25rem;
+    max-width: 200rem;
+    align-items: center;
+}
+
+.texto{
+    background-color: #FFA355;
+    border: 2px solid var(--cor-preto);
+    box-shadow: 4px 4px 0 var(--cor-preto);
+    color: var(--cor-preto);
+    padding: 1rem;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+}
+
+p{ 
+    text-align: justify;
+    line-height: 1.3rem;
+    text-indent: 30px;
+}
+
+.mulher{
+    width: 19rem;
+    padding: 20px;
+}
+
+.tx-m{
+    border-color: var(--cor-preto);
+    border-style: solid;
+    
+}
+
+.tx-h{
+    display: block;
+    align-items:center;
+    flex-direction: row-reverse;
+    
+}
+
+.seta{
+    display:flex;
+}
+
+@media screen and (max-width: 338px){
+    .mulher{
+        display: none;
+        
+    }
+    .tx-m{
+        display:flex;
+        padding: 15px;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .tx-h{
+        display:flex;
+        padding: 15px;
+    }
+    
+    .texto{
+        display: flex;
+        font-size: 10px;
+        
+    }
+
+    .seta{
+        display:flex;
+        justify-content: center;
+        
+        
+    }
+
+}
+
+@media screen and (min-width: 600px){
+    .tx-m{
+        display:flex;
+        
+    }
+
+    .tx-h{
+        display:flex;
+        padding: 20px;
+    }
+
+    .mulher{
+        display: flex;
+        
+    }
+
+    .seta{
+        display:flex;
+        flex-direction: row-reverse;
+    }
+
+    .texto{
+        font-size: 12px;
+        
+    }
+}
+
+
+@media screen and (min-width: 72rem) {
+    .tx-td,.tx-h,.tx-m, h1{
+        max-width: 90rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        
+    }
+}
