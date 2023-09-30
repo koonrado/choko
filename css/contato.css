@@ -184,6 +184,8 @@ form label {
         justify-content: center;
         align-items: center;
         background-color: var(--cor-fundo);
+        margin: 0%;
+        padding: 0%;
     }
     
     .form-img {
